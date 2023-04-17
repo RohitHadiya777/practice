@@ -1,1 +1,1 @@
-new file text
+new file text is now changed
