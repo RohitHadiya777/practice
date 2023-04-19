@@ -6,13 +6,28 @@ body {
 
 p {
     text-decoration: dashed;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     text-align: justify;
-    text-indent: 2em;
+    /* text-indent: 2em; */
     line-height: 1;
     letter-spacing: 0.2em;
     word-spacing: 1em;
 
     font-weight: 100;
 
+}
+ a {
+    color: red;
+
+ }
+a:visited {
+    color: hsl(120, 100%, 25%);
+}
+
+a:hover {
+    color: hsl(120, 100%, 25%, .4);
+}
+
+a:active {
+    color: aqua;
 }
