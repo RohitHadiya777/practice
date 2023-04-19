@@ -1,28 +1,59 @@
-body {
-    padding: 10%;
-    font-size: 1.5rem;
-    font-family: monospace;
-    font-weight: 900;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ol {
-    list-style-type: none;
+body {
+    margin: .5rem;
+    font-family: Montserrat;
+    text-align: center;
 }
+
 
 ul {
-    list-style-type:square;
-    text-align: center;
-    list-style-position: inside;
+    list-style-type: none;
+}
+nav {
+    border: 2px solid #90ee90;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 2rem;
+    line-height: 5rem;
 }
 
-ul li:nth-child(even){
-    color: #008000;
+
+h2 {
+    background: #800080;
+    color: #bb00ff;
+    border-radius: 2rem 2rem 0 0;
+}
+
+li a {
+    display: block;
+}
+li {
+    border-top: 1px solid #000000;
 
 }
 
-ul ::marker {
-    color: #ffff00;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
-    content: "sale >>"
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #3c3747;
+}
+
+
+li a:hover,
+li a:focus {
+    background: #008000;
+     color: #ffffff;
+     cursor: grab;
+}
+
+li:last-child a {
+    border-radius: 0 0 2rem 2rem;
 }
