@@ -1,33 +1,28 @@
 body {
     padding: 10%;
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 900;
 }
 
-p {
-    text-decoration: dashed;
-    text-transform: uppercase;
-    text-align: justify;
-    /* text-indent: 2em; */
-    line-height: 1;
-    letter-spacing: 0.2em;
-    word-spacing: 1em;
-
-    font-weight: 100;
-
-}
- a {
-    color: red;
-
- }
-a:visited {
-    color: hsl(120, 100%, 25%);
+ol {
+    list-style-type: none;
 }
 
-a:hover {
-    color: hsl(120, 100%, 25%, .4);
+ul {
+    list-style-type:square;
+    text-align: center;
+    list-style-position: inside;
 }
 
-a:active {
-    color: aqua;
+ul li:nth-child(even){
+    color: #008000;
+
+}
+
+ul ::marker {
+    color: #ffff00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    content: "sale >>"
 }
