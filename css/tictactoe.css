@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4f2bc6;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.reset {
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    background-color: #df7aaf;
+    border: none;
+}
+
+.reset:hover {
+    background-color: #d998bb;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-collapse: collapse;
+    border: none;
+}
+
+
+td {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: #00ffff;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+td:hover {
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+     /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template 3</title>
+  <link rel="stylesheet" href="./css/t3.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-start">
+          <a class="navbar-brand fw-medium" href="#">Corousel</a>
+          <ul class="nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form class="d-flex" role="search">
+            <input class="form-control bg-light me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide mt-0">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/solid-color-image .png" alt="...">
+          <div class="carousel-caption text-start pb-5">
+            <h1>Example headline.</h1>
+            <p>
+              Cras justo odio, dapibus ac facilisis in,egestas eget quam.
+              Donec id elit non mi porta gravida at eget metus. Nullam id
+              dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-lg btn-primary">
+              Sign up today
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption text-start pb-5">
+            <h1>Example headline.</h1>
+            <p>
+              Cras justo odio, dapibus ac facilisis in,egestas eget quam.
+              Donec id elit non mi porta gravida at eget metus. Nullam id
+              dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-lg btn-primary">
+              Sign up today
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption text-start pb-5">
+            <h1>Example headline.</h1>
+            <p>
+              Cras justo odio, dapibus ac facilisis in,egestas eget quam.
+              Donec id elit non mi porta gravida at eget metus. Nullam id
+              dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-lg btn-primary">
+              Sign up today
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span aria-hidden="true">
+          <i class="bi bi-chevron-left" style="-webkit-text-stroke: 3px;"></i>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span aria-hidden="true">
+          <i class="bi bi-chevron-right" style="-webkit-text-stroke: 3px;"></i>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container d-flex flex-lg-row flex-md-column flex-sm-column flex-column gap-5 pt-5 mt-5 px-5">
+      <div class="text-center">
+        <div class="d-flex justify-content-center">
+          <img class="rounded-circle" src="./images/solid-color-image .png" height="150" width="150" alt="...">
+        </div>
+
+        <h1 class="text-secondary">Heading</h1>
+        <p class="text-secondary fw-medium">
+          Donec sed odio dui. Etiam porta sem malesuada magnaa mollis euismod.
+          Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+          risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+          cursus magna.
+        </p>
+        <p>
+          <button class="btn btn-secondary">
+            view details
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg></span>
+          </button>
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="d-flex justify-content-center">
+          <img class="rounded-circle" src="./images/solid-color-image .png" height="150" width="150" alt="...">
+        </div>
+
+        <h1 class="text-secondary">Heading</h1>
+        <p class="text-secondary fw-medium">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+          eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+          amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
+          mauris condimentum nibh.
+        </p>
+        <p>
+          <button class="btn btn-secondary">
+            view details
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg></span>
+          </button>
+        </p>
+      </div>
+
+
+
+
+      <div class="text-center">
+        <div class="d-flex justify-content-center">
+          <img class="rounded-circle" src="./images/solid-color-image .png" height="150" width="150" alt="...">
+        </div>
+
+        <h1 class="text-secondary">Heading</h1>
+        <p class="text-secondary fw-medium">
+          Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+          egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+          nibh, ut fermentum massa justo sit amet risus.
+        </p>
+        <p>
+          <button class="btn btn-secondary">
+            view details
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg></span>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <div class="container text-secondary">
+      <div class="container my-5 py-4">
+        <hr>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="container d-flex">
+        <div class="py-5 pe-5">
+          <h1 class="display-5 fw-semibold text-dark-emphasis">
+            First featurette heading.
+            <span class="text-secondary">It'll blow your mind</span>
+          </h1>
+          <p class="lead">
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+        <div>
+          <svg height="500" width="500">
+            <rect width="100%" height="100%" fill="#eeeeee" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="xx-large" font-weight="900"
+              fill="#a7a7a7">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+
+      <div class="container my-5 py-4 text-secondary">
+        <hr>
+      </div>
+
+
+      <div class="container d-flex">
+        <div>
+          <svg height="500" width="500">
+            <rect width="100%" height="100%" fill="#eeeeee" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="xx-large" font-weight="900"
+              fill="#a7a7a7">500x500</text>
+          </svg>
+        </div>
+        <div class="py-5 ps-5">
+          <h1 class="display-5 fw-semibold text-dark-emphasis">
+            Oh yeah, it's that good.
+            <span class="text-secondary">See for yourself.</span>
+          </h1>
+          <p class="lead">
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+      </div>
+
+      <div class="container my-5 py-4 text-secondary">
+        <hr>
+      </div>
+
+      <div class="container d-flex">
+        <div class="py-5 pe-5">
+          <h1 class="display-5 fw-semibold text-dark-emphasis">
+            And lastly, this one.<span class="text-secondary">Checkmate.</span>
+          </h1>
+          <p class="lead">
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+        <div>
+          <svg height="500" width="500">
+            <rect width="100%" height="100%" fill="#eeeeee" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="xx-large" font-weight="900"
+              fill="#a7a7a7">500x500</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <div class="container mt-5 pt-4 text-secondary">
+    <hr>
+  </div>
+
+  <footer class="py-5">
+    <div class="container d-flex justify-content-between">
+      <div>
+        © 2017-2018 Company, Inc. · <a class="link" href="#">Privacy</a> ·
+        <a class="link" href="#">Terms <i class="fa-sharp fa-solid fa-angle-left"></i></a>
+      </div>
+      <a class="link fw-medium" href="#">back to top</a>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tictactoe</title>
+    <link rel="stylesheet" href="css/tictactoe.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <table>
+        <tr>
+            <td class="grid" ></td>
+            <td class="grid"></td>
+            <td class="grid"></td>
+        </tr>
+        <tr>
+            <td class="grid"></td>
+            <td class="grid"></td>
+            <td class="grid"></td>
+        </tr>
+        <tr>
+            <td class="grid"></td>
+            <td class="grid"></td>
+            <td class="grid"></td>
+        </tr>
+    </table>
+    <p><input class="reset" type="button" value="RESET"></p>
+
+    
+
+    <script>
+        $(document).ready(function() {
+            var player = 'X'
+            var tries = 0;
+            
+            
+            function check() {
+                    if($(this).text() === '') { 
+                        $(this).text(player);
+                        tries++;
+                
+
+                if(WinCon()) {
+                    setTimeout(function() {
+                        alert(player + ' won this round')
+                    }, 10)
+                    
+                    setTimeout(function() {
+                        reset()
+                    }, 10)
+                }
+
+                else if(tries === 9) {
+                    alert('draw')
+                    reset()
+                }
+
+                else {
+                    if(player === 'X') {
+                        player = 'O'
+                    }
+                    else {
+                        player = 'X'
+                    }
+                }
+            }
+            
+
+            };
+
+            function WinCon() {
+                var arr = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+                
+                for(var i = 0; i < arr.length; i++) {
+                    var win = arr[i];
+                    if(
+                        $('.grid').eq(win[0] -1).text() === player &&
+                        $('.grid').eq(win[1] -1).text() === player &&
+                        $('.grid').eq(win[2] -1).text() === player
+                    ) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            function reset() {
+                $('.grid').text('');
+                tries = 0;
+                player = 'X';
+            }
+
+            $('.grid').click(check)
+            $('.reset').click(reset)
+        });
+
+        
+        
+    </script>
+</body>
+</html>
+
+
+ 
