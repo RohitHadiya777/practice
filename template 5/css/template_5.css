@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+
+.room-1 {
+    background-image: url("../images/room-1.jpg");
+    background-size: 100% 100%;
+}
+
+.room-2 {
+    background-image: url("../images/room-2.jpg");
+    background-size: 100% 100%; 
+}
+
+.room-3 {
+    background-image: url("../images/room-3.jpg");
+    background-size: 100% 100%; 
+}
+
+.room-4 {
+    background-image: url("../images/room-4.jpg");
+    background-size: 100% 100%; 
+}

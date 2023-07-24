@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap');
+
+h1 {
+    font-family: 'Saira', sans-serif;
+}
+
+.text-orange {
+    color: #FF6F0F !important;
+}
+
+.btn-outline-orange {
+    border-color: #FF6F0F !important;
+}
+
+.bg-orange {
+    background-color: #FF6F0F !important;
+}
+
+.text-darker {
+    color: #808e91;
+}
+
+.btn-outline-darken {
+    border-color: #808e91 !important;
+}
+
+.btn-1 {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.border-thick {
+    border: 5px solid #FF6F0F;
+}
+
+
+::placeholder { 
+    color: red;
+    opacity: 1; 
+  }
+  
+
