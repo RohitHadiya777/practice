@@ -1,18 +1,9 @@
-<script setup>
-  import Block from './components/Block.vue'
-</script>
-
 <template>
-  <Block/>
+  <div>
+    <router-link to="/">Reaction timer</router-link>
+    <router-link to="/about">about</router-link>
+  </div>
+  <router-view/>
 </template>
 
-<script>
-  export default {
-    name: 'App',
-    components: { },
-    data() {
-      
-    }
-  }
-</script>
 
