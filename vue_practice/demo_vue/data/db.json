@@ -1,0 +1,8 @@
+{
+    "jobs": [
+        {"title": "front end developer", "id": 1, "details": "lorem ipsum dolor sit am"},
+        {"title": "back end developer", "id": 2, "details": "lorem ipsum dolor sit am"},
+        {"title": "graphics designer", "id": 3, "details": "lorem ipsum dolor sit am"}
+    ],
+    "blogs": []
+}

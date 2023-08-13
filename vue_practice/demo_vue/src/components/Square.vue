@@ -39,8 +39,12 @@
         width: 200px;
         height: 100px;
         background: red;
+        border-radius: 10px;
         color: aqua;
         text-align: center;
         margin: 40px auto;
-    } 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+         } 
 </style>
