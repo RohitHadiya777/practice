@@ -157,6 +157,14 @@ $utilities: (
       "xl": $font-size-xl,
       "xxl": $font-size-xxl
     )
+  ),
+
+  "border": (
+    "prefix": "b",
+    "values": (
+        "0": none,
+        "1": 1px solid black,
+    )
   )
 );
 

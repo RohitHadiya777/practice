@@ -71,6 +71,41 @@ button {
   border-width: 1px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 0) {
+  .responsive-text {
+    color: green;
+  }
+}
+@media (min-width: 480px) {
+  .responsive-text {
+    color: red;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-text {
+    color: blue;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-text {
+    color: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-text {
+    color: pink;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-text {
+    color: gray;
+  }
+}
+
 .text-primary {
   color: blue;
 }
@@ -3574,4 +3609,12 @@ button {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.b-0 {
+  border: none;
+}
+
+.b-1 {
+  border: 1px solid black;
 }
